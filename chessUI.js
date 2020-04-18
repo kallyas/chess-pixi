@@ -16,7 +16,7 @@ app.renderer.backgroundColor = 0x191919;
 //Add the canvas that Pixi automatically created for you to the HTML document
 document.body.appendChild(app.view);
 
-PIXI.loader.shared.add("sprites/pieces.png").load(setup);
+PIXI.loader.add("sprites/pieces.png").load(setup);
 
 // Behaviour:
 var useLocalFile = false;//
