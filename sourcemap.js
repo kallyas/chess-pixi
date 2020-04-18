@@ -8,4 +8,9 @@ var file = {
 
 var map = generate(file);
 
+fs.writeFile('./pixi/pixi.min.js.map', map.toString(), function (err) {
+  if (err) throw err;
+  console.log('File is created successfully.');
+});  
+
 console.log(map.toString());
